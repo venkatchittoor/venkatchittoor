@@ -1,6 +1,6 @@
 # Hi, I'm Venkat 👋
 
- Data Engineering + Agentic AI | Oil & Gas Domain
+Senior Consultant at Slalom | Data Engineering + Agentic AI | Oil & Gas Domain
 
 I build data pipelines and agentic AI systems — from production Medallion architectures to multi-agent crews that reason across real-world domain data. My portfolio spans the full spectrum from scripted pipelines to autonomous tool-calling agents, with a focus on the oil & gas domain where AI meets decades of engineering expertise.
 
@@ -20,29 +20,32 @@ I build data pipelines and agentic AI systems — from production Medallion arch
 | [offset-well-intelligence-crew](https://github.com/venkatchittoor/offset-well-intelligence-crew) | Agentic AI + O&G | Prompt-based crew | Real Equinor Volve data — cross-parameter formation evaluation reasoning |
 | [tool-calling-dq-agent](https://github.com/venkatchittoor/tool-calling-dq-agent) | Agentic AI | True tool-calling | Claude writes its own SQL and drives the investigation loop autonomously |
 | [volve-drilling-advisor](https://github.com/venkatchittoor/volve-drilling-advisor) | Agentic AI + O&G | Constrained tool-calling | Cross-project — offset well formation intelligence feeds live drilling advisory |
+| [volve-drilling-advisor-strands](https://github.com/venkatchittoor/volve-drilling-advisor-strands) | Agentic AI + O&G | Strands SDK | Same advisor rebuilt on AWS Strands — @tool decorator replaces ~200 lines of agent infrastructure |
 
 ---
 
 ## 🧭 The Agentic AI Spectrum
 
 ```
-Prompt-based          Constrained              True tool-calling
-(prior agents)        tool-calling             (tool-calling-dq-agent)
-      |               (volve-drilling-advisor)         |
-Your code decides   Claude decides             Claude decides
-the sequence        which tool + args          which tool + args
-                    Queries pre-written        AND writes its own SQL
+Prompt-based          Constrained              True tool-calling       Strands SDK
+(prior agents)        tool-calling             (tool-calling-dq-agent) (volve-drilling-advisor-strands)
+      |               (volve-drilling-advisor)         |                       |
+Your code decides   Claude decides             Claude decides          Claude decides
+the sequence        which tool + args          which tool + args       which tool + args
+                    Queries pre-written        AND writes its own SQL  Framework handles
+                                                                       all infrastructure
 ```
 
 ---
 
 ## 🛢️ O&G Domain Expertise
 
-Three projects apply agentic AI to oil & gas — a domain where the reasoning inside the prompts is the moat, not the architecture:
+Four projects apply agentic AI to oil & gas — a domain where the reasoning inside the prompts is the moat, not the architecture:
 
 - **drilling-npt-agent** — detects stuck pipe, washout, bit balling, twist-off from live sensor streams using cross-parameter reasoning
 - **offset-well-intelligence-crew** — correlates formation tops, assesses reservoir quality, and forecasts drillability from real Volve field well logs
 - **volve-drilling-advisor** — delivers real-time drilling advisories by combining live F-15 drilling parameters with formation intelligence from offset well Silver tables
+- **volve-drilling-advisor-strands** — same advisor rebuilt on AWS Strands SDK — demonstrates how an agentic framework eliminates boilerplate without touching domain logic
 
 ---
 
@@ -54,7 +57,7 @@ Three projects apply agentic AI to oil & gas — a domain where the reasoning in
 ![Delta Lake](https://img.shields.io/badge/Delta%20Lake-003366?style=flat)
 ![Apache Iceberg](https://img.shields.io/badge/Apache%20Iceberg-4A90D9?style=flat)
 ![Claude API](https://img.shields.io/badge/Claude%20API-CC785C?style=flat)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white)
+![AWS Strands](https://img.shields.io/badge/AWS%20Strands-232F3E?style=flat&logo=amazonaws&logoColor=white)
 
 ---
 
