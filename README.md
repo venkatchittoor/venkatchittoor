@@ -1,6 +1,6 @@
 # Hi, I'm Venkat 👋
 
-Senior Consultant at Slalom | Data Engineering + Agentic AI | Oil & Gas Domain
+Senior Consultant | Data Engineering + Agentic AI | Oil & Gas Domain
 
 I build data pipelines and agentic AI systems — from production Medallion architectures to multi-agent crews that reason across real-world domain data. My portfolio spans the full spectrum from scripted pipelines to autonomous tool-calling agents, with a focus on the oil & gas domain where AI meets decades of engineering expertise.
 
